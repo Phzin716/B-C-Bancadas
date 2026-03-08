@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <title>BC Marmoraria</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -116,7 +120,7 @@ inset:0;
 background:rgba(0,0,0,0.45);
 }
 
-.hero > *{
+.hero>*{
 position:relative;
 z-index:2;
 }
@@ -243,34 +247,6 @@ font-size:30px;
 margin-bottom:40px;
 }
 
-.sobre p{
-max-width:900px;
-margin:auto;
-text-align:center;
-line-height:1.9;
-color:#ccc;
-}
-
-.localizacao-box{
-text-align:center;
-max-width:800px;
-margin:auto;
-}
-
-.localizacao-box p a{
-color:#c9a24d;
-text-decoration:underline;
-font-weight:bold;
-}
-
-.localizacao-box iframe{
-width:100%;
-height:300px;
-border:0;
-border-radius:8px;
-margin-top:10px;
-}
-
 .servicos-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -281,6 +257,20 @@ gap:15px;
 width:100%;
 height:auto;
 border-radius:6px;
+}
+
+.localizacao-box{
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+
+.localizacao-box iframe{
+width:100%;
+height:300px;
+border:0;
+border-radius:8px;
+margin-top:10px;
 }
 
 .contact-box{
@@ -295,8 +285,8 @@ text-decoration:none;
 font-weight:bold;
 }
 
+/* HEADER MOBILE */
 @media(max-width:900px){
-
 header{
 flex-direction:column;
 gap:15px;
@@ -321,10 +311,10 @@ margin-left:0;
 .logo img{
 height:80px;
 }
-
 }
 
 </style>
+
 </head>
 
 <body>
@@ -363,32 +353,32 @@ clique e conheça a aplicação e detalhes de cada material
 
 <img src="imagens/carrosel1.png"
 data-title="Granito Preto"
-data-desc="Material de alta resistência e baixa porosidade, ideal para bancadas de cozinha e banheiro. Sua tonalidade elegante e acabamento preciso garantem durabilidade, fácil manutenção e sofisticação atemporal."
+data-desc="Material de alta resistência e baixa porosidade."
 onclick="abrirImagem(this)">
 
 <img src="imagens/carroself2.png"
 data-title="Lâmina Ultracompacto"
-data-desc="Material de alta tecnologia, desenvolvido para oferecer máxima resistência, precisão estética e versatilidade de aplicação."
+data-desc="Material de alta tecnologia."
 onclick="abrirImagem(this)">
 
 <img src="imagens/carroself3.png"
 data-title="Mármore Branco Paraná (Dolomítico)"
-data-desc="Mármore dolomítico de excelente resistência, indicado para bancadas de cozinha, banheiro e áreas internas."
+data-desc="Mármore dolomítico de excelente resistência."
 onclick="abrirImagem(this)">
 
 <img src="imagens/carroself4.png"
 data-title="Quartzito"
-data-desc="O quartzito é uma pedra natural de alta performance."
+data-desc="Pedra natural de alta performance."
 onclick="abrirImagem(this)">
 
 <img src="imagens/carroself5.png"
 data-title="Quartzo"
-data-desc="Superfície moderna, resistente e de baixa porosidade."
+data-desc="Superfície moderna."
 onclick="abrirImagem(this)">
 
 <img src="imagens/carroself6.png"
 data-title="Travertino Romano"
-data-desc="Pedra natural de estética clássica e textura marcante, o Travertino Romano confere elegância atemporal e identidade única aos projetos."
+data-desc="Pedra natural de estética clássica."
 onclick="abrirImagem(this)">
 
 </div>
@@ -409,24 +399,94 @@ Solicitar orçamento
 <h2 id="lightbox-title"></h2>
 <p id="lightbox-desc"></p>
 </div>
+</div>
+</div>
+
+<section id="produtos">
+
+<h3>Serviços entregues</h3>
+
+<div class="servicos-grid">
+
+<img src="imagens/Trabalho-1.jpg">
+<img src="imagens/Trabalho-2.jpeg">
+<img src="imagens/Trabalho-3.jpeg">
+<img src="imagens/Trabalho-4.jpeg">
+<img src="imagens/Trabalho-5.jpeg">
+<img src="imagens/Trabalho-6.jpeg">
+<img src="imagens/Trabalho-7.jpeg">
+<img src="imagens/Trabalho-8.jpeg">
+<img src="imagens/Trabalho-9.jpeg">
+<img src="imagens/Trabalho-10.jpeg">
+<img src="imagens/Trabalho-11.jpeg">
+<img src="imagens/Trabalho-12.jpeg">
+<img src="imagens/Trabalho-13.jpeg">
+<img src="imagens/Trabalho-14.jpeg">
+<img src="imagens/Trabalho-15.jpeg">
 
 </div>
+
+</section>
+
+<section id="sobre" class="sobre">
+
+<h3>Sobre nós</h3>
+
+</section>
+
+<section id="localizacao">
+
+<h3>Localização</h3>
+
+<div class="localizacao-box">
+
+<p>
+<a href="https://www.google.com/maps/search/?api=1&query=Rua+Equador,+91,+Santa+Bárbara+d'Oeste+SP" target="_blank">
+Como chegar: Rua Equador, nº 91
+</a>
+</p>
+
+<iframe src="https://www.google.com/maps?q=Rua+Equador+91&output=embed"></iframe>
+
 </div>
+
+</section>
+
+<section id="contato">
+
+<h3>Contato</h3>
+
+<div class="contact-box">
+
+<p>Telefone: <a href="tel:+5519994844122">(19) 99484-4122</a></p>
+
+<p>Email: <a href="mailto:bcbancadas@gmail.com">bcbancadas@gmail.com</a></p>
+
+<p>Instagram: <a href="https://www.instagram.com/becbancadas/" target="_blank">@becbancadas</a></p>
+
+</div>
+
+</section>
 
 <script>
 
 function abrirImagem(img){
+
 document.getElementById("lightbox").style.display="flex";
 document.getElementById("lightbox-img").src=img.src;
 document.getElementById("lightbox-title").innerText=img.dataset.title;
 document.getElementById("lightbox-desc").innerText=img.dataset.desc;
+
 }
 
 function fecharImagem(){
+
 document.getElementById("lightbox").style.display="none";
+
 }
 
 </script>
 
 </body>
+
 </html>
