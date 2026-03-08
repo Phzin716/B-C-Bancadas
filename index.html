@@ -20,11 +20,11 @@
   flex-shrink:0;   /* impede que a imagem encolha */
 }
 
-@media(max-width:900px){
-
 .sobre-imagens img{
-  width:100%;
-  max-width:320px;
+  width:450px;
+  height:auto;
+  display:block;
+  border-radius:6px;
 }
 
 .sobre-texto{
@@ -34,16 +34,28 @@
   color:#ccc;
 }
 
-/* celular */
+/* MOBILE */
 @media(max-width:900px){
 
-.sobre-texto{
-  font-size:13px;
-  line-height:1.5;
-  padding:0 15px;
-}
+  .sobre-box{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .sobre-imagens img{
+    width:85%;
+    max-width:320px;
+  }
+
+  .sobre-texto{
+    font-size:13px;
+    line-height:1.5;
+    padding:0 15px;
+  }
 
 }
+Depois disso
 
 /* MOBILE */
 @media(max-width:900px){
@@ -540,6 +552,7 @@ function fecharImagem(){
 
 </body>
 </html>
+
 
 
 
