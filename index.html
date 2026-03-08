@@ -273,7 +273,7 @@ section h3{
 
 .servicos-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:15px;
 }
 
@@ -281,6 +281,14 @@ section h3{
   width:100%;
   height:auto;
   border-radius:6px;
+}
+
+/* celular */
+@media (max-width:768px){
+  .servicos-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+  }
 }
 .contact-box{
   text-align:center;
@@ -517,6 +525,7 @@ function fecharImagem(){
 
 </body>
 </html>
+
 
 
 
